@@ -1,0 +1,61 @@
+.introducao {
+  display: grid;
+  padding: 200px 600px;
+  max-width: 1600px;
+  grid-template-columns: 1fr;
+  background-image: url(./img/img\ home.jpg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+.font-h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  color: #1d0901;
+  font-family: Montserrat Alternates;
+}
+.paragrafo {
+  font-size: 24px;
+  color: #1d0901;
+  font-family: fira sans;
+}
+.detalhe {
+  position: relative;
+  z-index: 1;
+}
+
+.detalhe h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("./icones/detalhe.svg") no-repeat center;
+  position: absolute;
+  top: -25px;
+  left: -55px;
+  z-index: -1;
+}
+@media (max-width: 1240px) {
+  .introducao {
+    padding: 200px 400px;
+  }
+}
+@media (max-width: 800px) {
+  .introducao {
+    padding: 200px 300px;
+  }
+  .font-h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 520px) {
+  .introducao {
+    padding: 200px 100px;
+    max-width: 400px;
+  }
+  .font-h1 {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,138 @@
+.section-exp {
+  display: grid;
+  background: #fdf6f4;
+  justify-content: center;
+}
+.titulo-experiencia {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin-top: 60px;
+  font-family: Montserrat Alternates;
+  font-size: 100px;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: #f6eae4;
+}
+.empresas {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: center;
+  gap: 60px;
+}
+.empresas-acima::before {
+  content: "";
+  display: block;
+  background: linear-gradient(#ffd1ae, #fa6d00);
+  border-radius: 100%;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: -8px;
+  left: 185px;
+}
+
+.empresas-acima {
+  background: #fff0ea;
+  border-radius: 5px;
+  align-content: center;
+  margin-top: 60px;
+  max-width: 300px;
+  padding: 50px 50px;
+  position: relative;
+}
+
+.contabilidade {
+  background-color: #fff0ea;
+  border-radius: 5px;
+  justify-content: center;
+  padding: 50px 50px;
+  max-width: 300px;
+  position: relative;
+}
+.contabilidade::before {
+  content: "";
+  display: block;
+  background: linear-gradient(#ffd1ae, #fa6d00);
+  border-radius: 100%;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: -8px;
+  left: 190px;
+}
+.empresa-titulo {
+  font-family: Montserrat Alternates;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #371405;
+}
+.empresa-subtitulo {
+  font-family: Montserrat Alternates;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  color: #371405;
+}
+.empresa-texto {
+  font-family: Fira Sans;
+  font-size: 0.875rem;
+  color: #371405;
+}
+.paragrafo-empresa {
+  text-align: center;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+  justify-self: center;
+  font-size: 1.4rem;
+  font-family: fira sans;
+  width: 600px;
+  color: #b8816b;
+}
+.color-strong {
+  color: #4e200e;
+}
+@media (max-width: 800px) {
+  .titulo-experiencia {
+    font-size: 4rem;
+  }
+  .empresas {
+    gap: 40px;
+    max-width: 600px;
+  }
+  .empresas-acima {
+    padding: 30px 30px;
+    margin-top: 40px;
+  }
+  .empresa-titulo {
+    font-size: 1rem;
+  }
+  .empresa-subtitulo {
+    font-size: 0.8rem;
+  }
+  .empresa-texto {
+    font-size: 0.8rem;
+  }
+  .contabilidade {
+    padding: 30px 30px;
+    margin-top: 40px;
+  }
+  .paragrafo-empresa {
+    font-size: 1rem;
+  }
+}
+.contabilidade::before {
+  top: -8px;
+  left: 175px;
+}
+.empresas-acima::before {
+  top: -8px;
+  left: 175px;
+}
+@media (max-width: 800px) {
+  .paragrafo-empresa {
+    max-width: 400px;
+  }
+}

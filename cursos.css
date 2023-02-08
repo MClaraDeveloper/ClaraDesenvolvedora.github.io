@@ -1,0 +1,147 @@
+.section-cursos {
+  display: grid;
+  background: #ffeae2;
+  justify-content: center;
+  height: auto;
+}
+.grid-cursos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.titulo-cursos {
+  margin-top: 60px;
+  margin-left: 200px;
+  font-family: Montserrat Alternates;
+  font-size: 100px;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: #f8ddd3;
+}
+.paragrafo-cursos {
+  font-family: fira sans;
+  max-width: 400px;
+  margin-top: 60px;
+  margin-left: 60px;
+  color: #b8816b;
+}
+.lista-cursos {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: center;
+  gap: 40px;
+}
+.lista-front::before {
+  content: "";
+  display: block;
+  background: linear-gradient(#ffd1ae, #fa6d00);
+  border-radius: 100%;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: -8px;
+  left: 115px;
+}
+.lista-front {
+  padding: 60px 20px;
+  background: #f8ddd3;
+  margin-bottom: 200px;
+  margin-top: 200px;
+  border-radius: 5px;
+  position: relative;
+}
+.titulo-lista {
+  font-family: Montserrat Alternates;
+  max-width: 200px;
+  font-weight: bold;
+  color: #1d0901;
+  flex: -1;
+}
+.sub-lista {
+  font-family: fira sans;
+  font-size: 14px;
+  color: #81452d;
+}
+@media (max-width: 1240px) {
+  .grid-cursos {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .paragrafo-cursos {
+    max-width: 400px;
+    margin-top: 60px;
+    color: #b8816b;
+  }
+  .titulo-cursos {
+    font-size: 100px;
+  }
+  .lista-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .titulo-cursos {
+    font-size: 3rem;
+  }
+  .grid-cursos {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
+  .lista-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    align-content: center;
+    gap: 10px;
+  }
+  .lista-front {
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .titulo-lista {
+    font-family: Montserrat Alternates;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .titulo-cursos {
+    font-size: 3rem;
+    margin-left: 100px;
+  }
+  .grid-cursos {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
+  .lista-cursos {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-content: center;
+    gap: 0px;
+  }
+  .lista-front {
+    padding: 25px 20px;
+    background: #f8ddd3;
+    margin-bottom: 80px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .paragrafo-cursos {
+    max-width: 300px;
+    margin-top: 60px;
+    margin-left: 100px;
+    color: #b8816b;
+  }
+}
