@@ -10,7 +10,7 @@
 }
 .titulo-cursos {
   margin-top: 60px;
-  margin-left: 200px;
+  justify-self: center;
   font-family: Montserrat Alternates;
   font-size: 100px;
   font-weight: bold;
@@ -19,6 +19,7 @@
 }
 .paragrafo-cursos {
   font-family: fira sans;
+  line-height: 24px;
   max-width: 400px;
   margin-top: 60px;
   margin-left: 60px;
@@ -28,7 +29,7 @@
   display: flex;
   flex: 1;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: auto;
   justify-content: center;
   gap: 40px;
 }
@@ -85,9 +86,9 @@
     gap: 20px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .titulo-cursos {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   .grid-cursos {
     display: grid;
@@ -97,9 +98,9 @@
   .lista-cursos {
     display: flex;
     flex-wrap: wrap;
-    max-width: 400px;
+    max-width: auto;
     align-content: center;
-    gap: 10px;
+    gap: 20px;
   }
   .lista-front {
     padding: 60px 20px;
@@ -111,6 +112,10 @@
   .titulo-lista {
     font-family: Montserrat Alternates;
     font-size: 1rem;
+  }
+  .paragrafo-cursos {
+    max-width: auto;
+    justify-self: center;
   }
 }
 @media (max-width: 500px) {
