@@ -1,7 +1,6 @@
 .introducao {
   display: grid;
   padding: 200px 600px;
-  max-width: 1600px;
   grid-template-columns: 1fr;
   background-image: url(./img/img\ home.jpg);
   background-position: center;

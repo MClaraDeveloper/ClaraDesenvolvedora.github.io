@@ -20,6 +20,7 @@
   max-width: 1200px;
   justify-content: center;
   gap: 60px;
+  margin-bottom: 120px;
 }
 .empresas-acima::before {
   content: "";
