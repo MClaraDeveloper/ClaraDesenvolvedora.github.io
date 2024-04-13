@@ -121,7 +121,7 @@
 @media (max-width: 500px) {
   .titulo-cursos {
     font-size: 3rem;
-    margin-left: 100px;
+    margin-left: 50px;
   }
   .grid-cursos {
     display: grid;
